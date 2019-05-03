@@ -43,8 +43,5 @@ async function train() {
 
 train().then(_ => {
   console.log("Training complete");
-  model
-    .predict(train_x)
-    .round()
-    .print();
+  model.predict(train_x).print();
 });
